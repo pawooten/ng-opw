@@ -1,6 +1,28 @@
-.patientSearchDiv
+h1
+{
+  margin:0px;
+}
+#patientSearchDiv
 {
   width:100%;
   height:100%;
   background-color:bisque;
+  display:flex;
+  flex-direction: column;
+}
+#patientSearchContentDiv
+{
+  flex:auto;
+  display:flex;
+  flex-direction:row;
+  border-top:1px solid black;
+}
+#patientSearchPanelDiv
+{
+  width:30%;
+  border-right:1px solid black;
+}
+#patientSearchResultsListDiv
+{
+  flex: 1 1 auto;
 }
