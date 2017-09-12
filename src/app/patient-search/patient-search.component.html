@@ -1,12 +1,12 @@
-<div id="patientSearchDiv">
+<div id="patientSearchDiv" fxLayout="column">
   <div id="patientSearchToolbarDiv">
     <h1>Patient Search</h1>
   </div>
-  <div id="patientSearchContentDiv">
-    <div id="patientSearchPanelDiv">
+  <div id="patientSearchContentDiv" fxFlex fxLayout="row">
+    <div id="patientSearchPanelDiv" fxFlex="20%">
       <app-patient-search-panel></app-patient-search-panel>
     </div>
-    <div id="patientSearchResultsListDiv">
+    <div id="patientSearchResultsListDiv" fxFlex>
       <app-patient-search-results-list></app-patient-search-results-list>
     </div>
   </div>

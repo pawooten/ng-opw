@@ -7,6 +7,8 @@ import { PatientSearchPanelComponent } from './patient-search-panel/patient-sear
 import { PatientSearchResultsListComponent } from './patient-search-results-list/patient-search-results-list.component';
 import { AppToolbarComponent } from './app-toolbar/app-toolbar.component';
 
+import { FlexLayoutModule } from '@angular/flex-layout';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -16,7 +18,8 @@ import { AppToolbarComponent } from './app-toolbar/app-toolbar.component';
     AppToolbarComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    FlexLayoutModule
   ],
   providers: [],
   bootstrap: [AppComponent]
