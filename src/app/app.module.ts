@@ -5,9 +5,12 @@ import { AppComponent } from './app.component';
 import { PatientSearchComponent } from './patient-search/patient-search.component';
 import { PatientSearchPanelComponent } from './patient-search-panel/patient-search-panel.component';
 import { PatientSearchResultsListComponent } from './patient-search-results-list/patient-search-results-list.component';
-import { AppToolbarComponent } from './app-toolbar/app-toolbar.component';
+import { ToolbarComponent } from './toolbar/toolbar.component';
 
 import { FlexLayoutModule } from '@angular/flex-layout';
+import { ChartSearchComponent } from './chart-search/chart-search.component';
+import { ChartSearchPanelComponent } from './chart-search-panel/chart-search-panel.component';
+import { ChartSearchResultsListComponent } from './chart-search-results-list/chart-search-results-list.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +18,10 @@ import { FlexLayoutModule } from '@angular/flex-layout';
     PatientSearchComponent,
     PatientSearchPanelComponent,
     PatientSearchResultsListComponent,
-    AppToolbarComponent
+    ToolbarComponent,
+    ChartSearchComponent,
+    ChartSearchPanelComponent,
+    ChartSearchResultsListComponent
   ],
   imports: [
     BrowserModule,
