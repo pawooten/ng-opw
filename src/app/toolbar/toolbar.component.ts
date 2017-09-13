@@ -12,4 +12,18 @@ export class ToolbarComponent implements OnInit {
   ngOnInit() {
   }
 
+  onChartSearchClicked()
+  {
+    console.log('chart search clicked');
+  }
+
+  onPatientSearchClicked()
+  {
+    console.log('patient search clicked');
+  }
+
+  onScheduledPatientSearchClicked()
+  {
+    console.log('scheduled patient search clicked');
+  }
 }

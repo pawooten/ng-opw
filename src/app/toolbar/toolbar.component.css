@@ -1,9 +1,16 @@
-h1
-{
-  margin:0px;
-}
 #toolbarDiv
 {
   background-color: aliceblue;
   border-bottom: 1px solid black;
+}
+/*
+ TODO: Why is this necessary? flex-layout causes a vertical scroll bar for the window unless
+ the images of the toolbar are explicitly sized. It doesn't seem to matter what the size is,
+ 32px, 300px, 8px, all of them cause the scrollbar to not render
+*/
+#toolbarDiv > img
+{
+  height:32px;
+  width:32px;
+  cursor:pointer;
 }
