@@ -11,6 +11,9 @@ import { FlexLayoutModule } from '@angular/flex-layout';
 import { ChartSearchComponent } from './chart-search/chart-search.component';
 import { ChartSearchPanelComponent } from './chart-search-panel/chart-search-panel.component';
 import { ChartSearchResultsListComponent } from './chart-search-results-list/chart-search-results-list.component';
+import { ScheduledPatientSearchComponent } from './scheduled-patient-search/scheduled-patient-search.component';
+import { ScheduledPatientSearchPanelComponent } from './scheduled-patient-search-panel/scheduled-patient-search-panel.component';
+import { ScheduledPatientSearchResultsListComponent } from './scheduled-patient-search-results-list/scheduled-patient-search-results-list.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +24,10 @@ import { ChartSearchResultsListComponent } from './chart-search-results-list/cha
     ToolbarComponent,
     ChartSearchComponent,
     ChartSearchPanelComponent,
-    ChartSearchResultsListComponent
+    ChartSearchResultsListComponent,
+    ScheduledPatientSearchComponent,
+    ScheduledPatientSearchPanelComponent,
+    ScheduledPatientSearchResultsListComponent
   ],
   imports: [
     BrowserModule,
