@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'toolbar',
@@ -7,23 +8,23 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ToolbarComponent implements OnInit {
 
-  constructor() { }
+  constructor(private _router: Router ) { }
 
   ngOnInit() {
   }
 
-  onChartSearchClicked()
-  {
+  onChartSearchClicked() {
     console.log('chart search clicked');
+    this._router.navigate(['chartSearch']);
   }
 
-  onPatientSearchClicked()
-  {
+  onPatientSearchClicked() {
     console.log('patient search clicked');
+    this._router.navigate(['patientSearch']);
   }
 
-  onScheduledPatientSearchClicked()
-  {
+  onScheduledPatientSearchClicked() {
     console.log('scheduled patient search clicked');
+    this._router.navigate(['scheduledPatientSearch']);
   }
 }
