@@ -16,6 +16,8 @@ import { ScheduledPatientSearchComponent } from './scheduled-patient-search/sche
 import { ScheduledPatientSearchPanelComponent } from './scheduled-patient-search-panel/scheduled-patient-search-panel.component';
 import { ScheduledPatientSearchResultsListComponent } from './scheduled-patient-search-results-list/scheduled-patient-search-results-list.component';
 
+import { appRoutes } from './app.route-definitions';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -33,12 +35,7 @@ import { ScheduledPatientSearchResultsListComponent } from './scheduled-patient-
   imports: [
     BrowserModule,
     FlexLayoutModule,
-    RouterModule.forRoot([
-      { path: '', component: PatientSearchComponent },
-      { path: 'chartSearch', component: ChartSearchComponent },
-      { path: 'patientSearch', component: PatientSearchComponent },
-      { path: 'scheduledPatientSearch', component: ScheduledPatientSearchComponent }
-    ])
+    RouterModule.forRoot( appRoutes )
   ],
   providers: [],
   bootstrap: [AppComponent]
