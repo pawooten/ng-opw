@@ -8,13 +8,16 @@
  the images of the toolbar are explicitly sized. It doesn't seem to matter what the size is,
  32px, 300px, 8px, all of them cause the scrollbar to not render
 */
-#toolbarDiv > img
+img
 {
   height:32px;
   width:32px;
-  cursor:pointer;
 }
-.selectedToolbarButton
+.selectedToolbarButton > img
 {
   border: 2px solid goldenrod;
+}
+a
+{
+  text-decoration: none;
 }

@@ -1,11 +1,11 @@
 <div id="toolbarDiv">
-  <img src="../../assets/icons/patient-search.png" title="Patient Search"
-  (click)="onPatientSearchClicked()"
-  [class.selectedToolbarButton]="isPatientSearch"/>
-  <img src="../../assets/icons/chart-search.png" title="Chart Search"
-  (click)="onChartSearchClicked()"
-  [class.selectedToolbarButton]="isChartSearch" />
-  <img src="../../assets/icons/scheduled-patient-search.png" title="Scheduled Patient Search"
-  (click)="onScheduledPatientSearchClicked()"
-  [class.selectedToolbarButton]="isScheduledPatientSearch" />
+  <a routerLink="patientSearch" routerLinkActive="selectedToolbarButton">
+    <img src="../../assets/icons/patient-search.png" title="Patient Search" />
+  </a>
+  <a routerLink="chartSearch" routerLinkActive="selectedToolbarButton">
+    <img src="../../assets/icons/chart-search.png" title="Chart Search" />
+  </a>
+  <a routerLink="scheduledPatientSearch" routerLinkActive="selectedToolbarButton">
+    <img src="../../assets/icons/scheduled-patient-search.png" title="Scheduled Patient Search" />
+  </a>
 </div>
