@@ -14,3 +14,7 @@
   width:32px;
   cursor:pointer;
 }
+.selectedToolbarButton
+{
+  border: 2px solid goldenrod;
+}
