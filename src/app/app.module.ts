@@ -17,6 +17,10 @@ import { ScheduledPatientSearchPanelComponent } from './scheduled-patient-search
 import { ScheduledPatientSearchResultsListComponent } from './scheduled-patient-search-results-list/scheduled-patient-search-results-list.component';
 
 import { appRoutes } from './app.route-definitions';
+import { PatientListComponent } from './patient-list/patient-list.component';
+import { PatientListListComponent } from './patient-list-list/patient-list-list.component';
+import { PatientListPatientListComponent } from './patient-list-patient-list/patient-list-patient-list.component';
+import { PatientViewerComponent } from './patient-viewer/patient-viewer.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +34,11 @@ import { appRoutes } from './app.route-definitions';
     ChartSearchResultsListComponent,
     ScheduledPatientSearchComponent,
     ScheduledPatientSearchPanelComponent,
-    ScheduledPatientSearchResultsListComponent
+    ScheduledPatientSearchResultsListComponent,
+    PatientListComponent,
+    PatientListListComponent,
+    PatientListPatientListComponent,
+    PatientViewerComponent
   ],
   imports: [
     BrowserModule,

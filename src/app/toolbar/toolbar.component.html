@@ -1,6 +1,12 @@
 <div id="toolbarDiv">
   <img id="menuButton" src="../../assets/icons/menu.png" title="Main Menu" />
   <div id="expandedMenuDiv">
+    <a routerLink="">
+      <div class="menuItemDiv">
+        <img src="../../assets/icons/return-to-patient.png" title="Return to Patient" />
+      <span class="menuItemSpan">Return to Patient</span>
+      </div>
+    </a>
     <a routerLink="patientSearch" routerLinkActive="selectedToolbarButton">
       <div class="menuItemDiv">
         <img src="../../assets/icons/patient-search.png" title="Patient Search" />
@@ -17,6 +23,12 @@
       <div class="menuItemDiv">
           <img src="../../assets/icons/scheduled-patient-search.png" title="Scheduled Patient Search" />
         <span class="menuItemSpan">Scheduled Patient Search</span>
+      </div>
+    </a>
+    <a routerLink="patientList" routerLinkActive="selectedToolbarButton">
+      <div class="menuItemDiv">
+          <img src="../../assets/icons/patient-list.png" title="Patient List" />
+        <span class="menuItemSpan">Patient List</span>
       </div>
     </a>
   </div>
