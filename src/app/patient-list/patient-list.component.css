@@ -1,0 +1,18 @@
+h1
+{
+  margin:0px;
+}
+#patientListDiv
+{
+  width:100%;
+  height:100%;
+  background-color:darkkhaki;
+}
+#patientListContentDiv
+{
+  border-top:1px solid black;
+}
+#patientListListDiv
+{
+  border-right:1px solid black;
+}
