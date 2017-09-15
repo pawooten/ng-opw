@@ -5,7 +5,7 @@ import { ChartSearchComponent } from './chart-search/chart-search.component';
 import { ScheduledPatientSearchComponent } from './scheduled-patient-search/scheduled-patient-search.component';
 
 export const appRoutes: Routes = [
-      { path: '', component: PatientSearchComponent },
+      // { path: '', component: PatientSearchComponent },
       { path: 'chartSearch', component: ChartSearchComponent },
       { path: 'patientSearch', component: PatientSearchComponent },
       { path: 'scheduledPatientSearch', component: ScheduledPatientSearchComponent }

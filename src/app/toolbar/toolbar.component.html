@@ -1,11 +1,23 @@
 <div id="toolbarDiv">
-  <a routerLink="patientSearch" routerLinkActive="selectedToolbarButton">
-    <img src="../../assets/icons/patient-search.png" title="Patient Search" />
-  </a>
-  <a routerLink="chartSearch" routerLinkActive="selectedToolbarButton">
-    <img src="../../assets/icons/chart-search.png" title="Chart Search" />
-  </a>
-  <a routerLink="scheduledPatientSearch" routerLinkActive="selectedToolbarButton">
-    <img src="../../assets/icons/scheduled-patient-search.png" title="Scheduled Patient Search" />
-  </a>
+  <img id="menuButton" src="../../assets/icons/menu.png" title="Main Menu" />
+  <div id="expandedMenuDiv">
+    <a routerLink="patientSearch" routerLinkActive="selectedToolbarButton">
+      <div class="menuItemDiv">
+        <img src="../../assets/icons/patient-search.png" title="Patient Search" />
+      <span class="menuItemSpan">Patient Search</span>
+      </div>
+    </a>
+    <a routerLink="chartSearch" routerLinkActive="selectedToolbarButton">
+      <div class="menuItemDiv">
+          <img src="../../assets/icons/chart-search.png" title="Chart Search" />
+        <span class="menuItemSpan">Chart Search</span>
+      </div>
+    </a>
+    <a routerLink="scheduledPatientSearch" routerLinkActive="selectedToolbarButton">
+      <div class="menuItemDiv">
+          <img src="../../assets/icons/scheduled-patient-search.png" title="Scheduled Patient Search" />
+        <span class="menuItemSpan">Scheduled Patient Search</span>
+      </div>
+    </a>
+  </div>
 </div>

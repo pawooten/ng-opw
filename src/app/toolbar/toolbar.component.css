@@ -12,12 +12,40 @@ img
 {
   height:32px;
   width:32px;
+  margin:6px;
+  cursor:pointer;
 }
-.selectedToolbarButton > img
+.selectedToolbarButton > div
 {
   border: 2px solid goldenrod;
 }
 a
 {
   text-decoration: none;
+}
+#toolbarDiv:hover #expandedMenuDiv
+{
+  opacity:1.0;
+  visibility: visible;
+}
+#expandedMenuDiv
+{
+  opacity:0;
+  position: absolute;
+  width:260px;
+  background-color:aliceblue;
+  border:1px solid black;
+  visibility: hidden;
+  transition: visibility 0.4s ease-in-out, opacity 0.4s ease-in;
+}
+.menuItemSpan
+{
+  position:absolute;
+  top:50%;
+  transform:translateY(-50%);
+  margin-left: 10px;
+}
+.menuItemDiv
+{
+  position:relative;
 }
