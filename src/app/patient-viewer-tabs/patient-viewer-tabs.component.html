@@ -1,0 +1,5 @@
+<div id="tabsDiv">
+  <div  *ngFor="let tab of Tabs" class="displayTab"
+    [style.background]="tab.BackgroundColor"
+    [style.color]="tab.TextColor" >{{tab.Label}} ( {{tab.Count}} )</div>
+</div>

@@ -21,6 +21,7 @@ import { PatientListComponent } from './patient-list/patient-list.component';
 import { PatientListListComponent } from './patient-list-list/patient-list-list.component';
 import { PatientListPatientListComponent } from './patient-list-patient-list/patient-list-patient-list.component';
 import { PatientViewerComponent } from './patient-viewer/patient-viewer.component';
+import { PatientViewerTabsComponent } from './patient-viewer-tabs/patient-viewer-tabs.component';
 
 @NgModule({
   declarations: [
@@ -38,7 +39,8 @@ import { PatientViewerComponent } from './patient-viewer/patient-viewer.componen
     PatientListComponent,
     PatientListListComponent,
     PatientListPatientListComponent,
-    PatientViewerComponent
+    PatientViewerComponent,
+    PatientViewerTabsComponent
   ],
   imports: [
     BrowserModule,
