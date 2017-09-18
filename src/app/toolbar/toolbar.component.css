@@ -3,6 +3,11 @@
   background-color: aliceblue;
   border-bottom: 1px solid black;
 }
+#mainToolbarDiv
+{
+  display:inline-block;
+  cursor:pointer;
+}
 /*
  TODO: Why is this necessary? flex-layout causes a vertical scroll bar for the window unless
  the images of the toolbar are explicitly sized. It doesn't seem to matter what the size is,
@@ -23,7 +28,7 @@ a
 {
   text-decoration: none;
 }
-#toolbarDiv:hover #expandedMenuDiv
+#mainToolbarDiv:hover #expandedMenuDiv
 {
   opacity:1.0;
   visibility: visible;
