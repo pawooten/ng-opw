@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 
 import { PatientViewerTab } from './patient-viewer-tab';
 
-import { ConfigurationService } from '../../services/configuration.service';
+import { ConfigurationService } from '../../core-module/services/configuration.service';
 
 @Component({
   selector: 'app-patient-viewer-tabs',

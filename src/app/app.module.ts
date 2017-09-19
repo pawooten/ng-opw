@@ -22,7 +22,8 @@ import { PatientListListComponent } from './components/patient-list-list/patient
 import { PatientListPatientListComponent } from './components/patient-list-patient-list/patient-list-patient-list.component';
 import { PatientViewerComponent } from './components/patient-viewer/patient-viewer.component';
 import { PatientViewerTabsComponent } from './components/patient-viewer-tabs/patient-viewer-tabs.component';
-import { ConfigurationService } from './services/configuration.service';
+
+import { CoreModule } from './core-module/core.module';
 
 @NgModule({
   declarations: [
@@ -46,9 +47,10 @@ import { ConfigurationService } from './services/configuration.service';
   imports: [
     BrowserModule,
     FlexLayoutModule,
+    CoreModule,
     RouterModule.forRoot( appRoutes )
   ],
-  providers: [ ConfigurationService ],
+  providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
