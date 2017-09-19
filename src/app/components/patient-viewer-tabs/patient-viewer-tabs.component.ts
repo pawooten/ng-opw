@@ -2,12 +2,11 @@ import { Component, OnInit } from '@angular/core';
 
 import { PatientViewerTab } from './patient-viewer-tab';
 
-import { ConfigurationService } from '../configuration.service';
+import { ConfigurationService } from '../../services/configuration.service';
 
 @Component({
   selector: 'app-patient-viewer-tabs',
   templateUrl: './patient-viewer-tabs.component.html',
-  providers: [ ConfigurationService ],
   styleUrls: ['./patient-viewer-tabs.component.css']
 })
 export class PatientViewerTabsComponent implements OnInit {
