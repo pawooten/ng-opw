@@ -2,12 +2,16 @@
 {
   background-color: aliceblue;
   height:100%;
-  overflow-y:scroll;
+  overflow-y:auto;
 }
 
 .displayTab
 {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  padding:16px;
+  font-weight: bold;
+  padding:16px 6px;
   border-bottom: 1px solid black;
+  white-space: nowrap;
+  overflow:hidden;
+  text-overflow:ellipsis;
 }
