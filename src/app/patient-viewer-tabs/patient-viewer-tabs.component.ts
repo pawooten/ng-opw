@@ -2,16 +2,21 @@ import { Component, OnInit } from '@angular/core';
 
 import { PatientViewerTab } from './patient-viewer-tab';
 
+import { ConfigurationService } from '../configuration.service';
+
 @Component({
   selector: 'app-patient-viewer-tabs',
   templateUrl: './patient-viewer-tabs.component.html',
+  providers: [ ConfigurationService ],
   styleUrls: ['./patient-viewer-tabs.component.css']
 })
 export class PatientViewerTabsComponent implements OnInit {
 
   public Tabs: Array<PatientViewerTab> = new Array<PatientViewerTab>();
 
-  constructor() {
+  public ShowTabCounts: boolean;
+
+  constructor( configurationService: ConfigurationService ) {
     this.Tabs.push( new PatientViewerTab( 'Tab Number One', 100, 'bisque', 'black' ) );
     this.Tabs.push( new PatientViewerTab( 'Tab Number Two', 10, 'aqua', 'black' ) );
     this.Tabs.push( new PatientViewerTab( 'Tab Number Three', 1, 'teal', 'black' ) );
@@ -34,6 +39,8 @@ export class PatientViewerTabsComponent implements OnInit {
     this.Tabs.push( new PatientViewerTab( 'Case Number Eleven', 100, 'aliceblue', 'black' ) );
     this.Tabs.push( new PatientViewerTab( 'Case Number Twelve', 10, 'coral', 'black' ) );
     this.Tabs.push( new PatientViewerTab( 'New', 10, 'red', 'black' ) );
+
+    this.ShowTabCounts = configurationService.showTabCounts;
    }
 
   ngOnInit() {
