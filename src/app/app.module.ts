@@ -23,6 +23,8 @@ import { PatientListPatientListComponent } from './components/patient-list-patie
 import { PatientViewerComponent } from './components/patient-viewer/patient-viewer.component';
 import { PatientViewerTabsComponent } from './components/patient-viewer-tabs/patient-viewer-tabs.component';
 
+import { TabsService } from './services/tabs.service';
+
 import { CoreModule } from './core-module/core.module';
 
 @NgModule({
@@ -50,7 +52,7 @@ import { CoreModule } from './core-module/core.module';
     CoreModule,
     RouterModule.forRoot( appRoutes )
   ],
-  providers: [],
+  providers: [ TabsService ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
