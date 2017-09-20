@@ -9,7 +9,5 @@ export class PatientViewerComponent implements OnInit {
 
   constructor() { }
 
-  ngOnInit() {
-  }
-
+  ngOnInit() {}
 }

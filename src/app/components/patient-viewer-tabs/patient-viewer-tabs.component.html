@@ -2,4 +2,5 @@
   <div  *ngFor="let tab of Tabs" class="displayTab"
     [style.background]="tab.BackgroundColor"
     [style.color]="tab.TextColor" ><span>{{tab.Label}}</span><span *ngIf="ShowTabCounts"> ({{tab.Count}})</span></div>
+      <button (click)="onRefreshTabsClicked()">Refresh Tabs</button>
 </div>
